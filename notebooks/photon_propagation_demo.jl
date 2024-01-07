@@ -17,11 +17,12 @@ end
 # ╔═╡ 6d7c401a-ac83-11ee-24f7-3510dd251473
 begin
     import Pkg
-	Pkg.Registry.add(Pkg.RegistrySpec(url = "https://github.com/PLEnuM-group/julia-registry.git"))
+	#Pkg.Registry.add(Pkg.RegistrySpec(url = "https://github.com/PLEnuM-group/julia-registry.git"))
 	
     Pkg.activate(Base.current_project())
 	#Pkg.activate()
 
+	"""
 	Pkg.add([
         Pkg.PackageSpec(name="PhotonPropagation"),
         Pkg.PackageSpec(name="StaticArrays"),
@@ -33,9 +34,9 @@ begin
 		Pkg.PackageSpec(name="Rotations"),
 		Pkg.PackageSpec(name="LinearAlgebra"),
     ])
-	Pkg.update()
+	#Pkg.update()
     Pkg.instantiate()
-
+	"""
 	
     using PhotonPropagation
 	using StaticArrays
