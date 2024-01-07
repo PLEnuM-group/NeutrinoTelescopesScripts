@@ -14,6 +14,7 @@ Run `julia`. In the REPL and enter:
 ```julia
 ]add Pluto
 ```
+Exit julia using CTRL+D
 
 Switch into the notebook directory:
 ```julia
