@@ -19,7 +19,7 @@ Exit julia using CTRL+D
 Switch into the notebook directory:
 ```julia
 cd notebooks
-julia -e "import Pluto(); Pluto.run()"
+julia -e "import Pluto; Pluto.run()"
 ```
 
 Choose a notebook and run.
